@@ -27,9 +27,9 @@ CONCERTINCDIR	= $(CONCERTDIR)/include
 CPLEXINCDIR		= $(CPLEXDIR)/include
 CCFLAGS			= $(CCOPT) -I$(CPLEXINCDIR) -I$(CONCERTINCDIR) 
 
-EXE1 = maxCov
-OBJ1 = maxCov.o
-SRC1 = maxCov.cpp
+EXE1 = mcsc
+OBJ1 = mcsc.o
+SRC1 = mcsc.cpp
 
 EXE2 = motif
 OBJ2 = motif.o
