@@ -87,4 +87,4 @@ Simply run `make` command in the root cd-CAP folder. It will create the executab
 `-h` : &nbsp;&nbsp; This integer parameter specifies the number of seconds that the optimization step is allowed to take before returning a solution.
 
 #### Example
-./mcsc -n ../data/STRING10_HiConf_PPI.edges -l ../data/alteration_status_COAD_20171108.tsv -c ../data/string10_node_chromosome_map.tsv -r 1 -s 10 -t 138 -k 100 -e 0 -d 32 -h 36000 -f TCGA_COAD
+`./mcsc -n ../data/STRING10_HiConf_PPI.edges -l ../data/alteration_status_COAD_20171108.tsv -c ../data/string10_node_chromosome_map.tsv -r 1 -s 10 -t 138 -k 100 -e 0 -d 32 -h 36000 -f TCGA_COAD`
