@@ -1114,7 +1114,7 @@ int main( int argc, char * argv[] ) {
 	printHeader( "MCSC ILP" );
 	// INPUT CHECK
 	if (argc <= 1) {
-		fprintf(stderr, "./main_setcover_k -n [network] -l [alteration profiles] -c [chromosome information; optional] -r [min number of colours in subnetwork] -x [exclude genes; optional] -s [maximum subnetwork size] -t [minimum subgraph recurrence]  -k [number of subnetworks] -e [error; optional] -f [outputFolder] -d [threads] -t [time limit in seconds]\n\n");
+		fprintf(stderr, "./mcsc -n [network] -l [alteration profiles] -c [chromosome information; optional] -r [min number of colours in subnetwork] -x [exclude genes; optional] -s [maximum subnetwork size] -t [minimum subgraph recurrence]  -k [number of subnetworks] -e [error; optional] -f [outputFolder] -d [threads] -h [time limit in seconds]\n\n");
 		return 0;
 	}
 	char consoleFlags[] = {'n', 'l', 's', 't', 'f', 'k', 'c', 'x', 'e', 'd', 'h', 'r', 0};
