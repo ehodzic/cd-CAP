@@ -23,7 +23,7 @@ Simply run `make` command in the root cd-CAP folder. It will create the executab
 | `-n` | network file | 
 | `-l` | alterations file |
 | `-c` | (optional) gene-to-chromosome map |
-| `-x` | (optional) output folder (optional) |
+| `-x` | Excluded genes |
 | `-f` | output folder name |
 | `-r` | minimum number of colors in each subnetwork |
 | `-s` | maximum subnetwork size |
