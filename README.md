@@ -16,7 +16,7 @@ Simply run `make` command in the root cd-CAP folder. It will create the executab
 **Usage:**
 ```sh
 ./mcsc -n [network] -l [alteration profiles] -c [chromosome information; optional] -r [min number of colours in subnetwork] -x [exclude genes; optional] -s [maximum subnetwork size] -t [minimum subgraph recurrence]  -k [number of subnetworks] -e [error; optional] -f [outputFolder] -d [threads] -t [time limit in seconds]
-./mcsi -p [for p value simulation; optional] -n [network] -l [alteration profiles] -r [color options in subnetwork] -s [maximum subnetwork size] -t [minimum subgraph recurrence] -e [error; optional]
+./mcsi -p (for p value simulation; optional) -n [network] -l [alteration profiles] -r [color options in subnetwork] -s [maximum subnetwork size] -t [minimum subgraph recurrence] -e [error; optional]
 ```
 
 | Parameters | Description for MCSC | Description for MCSI |
@@ -33,7 +33,7 @@ Simply run `make` command in the root cd-CAP folder. It will create the executab
 | `-e` | (optional) allowed extension error rate | (optional) allowed extension error rate |
 | `-d` | number of threads used for ILP solver | N/A |
 | `-h` | time limit in seconds for ILP solver | N/A |
-| `-p` | N/A | p-value simulation mode |
+| `-p` | N/A | (optional, without arguments) p-value simulation mode |
 
 
 `-n` : &nbsp;&nbsp; This parameter represents an edge collection file where each row represents an edge in form of two node names, separated by whitespace. All edges are treated as undirected. There is no header row. e.g.
