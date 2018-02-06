@@ -12,27 +12,28 @@ The Makefile is set-up for GCC 6.2. If you are using GCC version 4.x, add ` std=
 
 Simply run `make` command in the root cd-CAP folder. It will create the executables.
 
-### Running `mcsc`
+### Running `mcsc` and `mcsi`
 **Usage:**
 ```sh
 ./mcsc -n [network] -l [alteration profiles] -c [chromosome information; optional] -r [min number of colours in subnetwork] -x [exclude genes; optional] -s [maximum subnetwork size] -t [minimum subgraph recurrence]  -k [number of subnetworks] -e [error; optional] -f [outputFolder] -d [threads] -t [time limit in seconds]
+./mcsi -p [for p value simulation; optional] -n [network] -l [alteration profiles] -r [color options in subnetwork] -s [maximum subnetwork size] -t [minimum subgraph recurrence] -e [error; optional]
 ```
 
-| Parameters | Description |
-| ------ | ------ |
-| `-n` | network file | 
-| `-l` | alterations file |
-| `-c` | (optional) gene-to-chromosome map |
-| `-x` | (optional) Excluded genes |
-| `-f` | output folder name |
-| `-r` | minimum number of colors in each subnetwork |
-| `-s` | maximum subnetwork size |
-| `-t` | minimum sample recurrence |
-| `-k` | number of resulting subnetworks |
-| `-e` | (optional) allowed extension error rate |
-| `-d` | number of threads used |
-| `-h` | time limit in seconds |
-
+| Parameters | Description for MCSC | Description for MCSI |
+| ------ | ------ | ------ |
+| `-n` | network file | network file |
+| `-l` | alterations file | alterations file |
+| `-c` | (optional) gene-to-chromosome map | N/A |
+| `-x` | (optional) Excluded genes | N/A |
+| `-f` | output folder name | N/A (mcsi has a single output file) |
+| `-r` | minimum number of colors in each subnetwork | color requirement of the maximum subnetwork |
+| `-s` | maximum subnetwork size | maximum subnetwork size |
+| `-t` | minimum sample recurrence | minimum sample recurrence |
+| `-k` | number of resulting subnetworks | N/A |
+| `-e` | (optional) allowed extension error rate | (optional) allowed extension error rate |
+| `-d` | number of threads used for ILP solver | N/A |
+| `-h` | time limit in seconds for ILP solver | N/A |
+| `-p` | N/A | p-value simulation mode |
 
 
 `-n` : &nbsp;&nbsp; This parameter represents an edge collection file where each row represents an edge in form of two node names, separated by whitespace. All edges are treated as undirected. There is no header row. e.g.
