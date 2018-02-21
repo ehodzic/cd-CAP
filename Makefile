@@ -31,9 +31,9 @@ EXE1 = mcsc
 OBJ1 = mcsc.o
 SRC1 = mcsc.cpp
 
-EXE2 = motif
-OBJ2 = motif.o
-SRC2 = motif.cpp
+EXE2 = mcsi
+OBJ2 = mcsi.o
+SRC2 = mcsi.cpp
 
 EXE3 = pvalue_sim
 OBJ3 = pvalue_sim.o
