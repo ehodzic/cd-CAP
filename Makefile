@@ -35,14 +35,10 @@ EXE2 = mcsi
 OBJ2 = mcsi.o
 SRC2 = mcsi.cpp
 
-EXE3 = pvalue_sim
-OBJ3 = pvalue_sim.o
-SRC3 = pvalue_sim.cpp
-
-all: $(EXE1) $(EXE2) $(EXE3)
+all: $(EXE1) $(EXE2)
 
 clean:
-	rm -f *.o $(EXE1) $(EXE2) $(EXE3)
+	rm -f *.o $(EXE1) $(EXE2)
 
 $(EXE1): $(OBJ1)
 	$(CCC) $(CCFLAGS) $(CCLNDIRS) -o $(EXE1) $(OBJ1) $(CCLNFLAGS)
@@ -53,8 +49,3 @@ $(EXE2): $(OBJ2)
 	$(CCC) $(CCFLAGS) $(CCLNDIRS) -o $(EXE2) $(OBJ2) $(CCLNFLAGS)
 $(OBJ2): $(SRC2)
 	$(CCC) -c $(CCFLAGS) $(SRC2) -o $(OBJ2)
-
-$(EXE3): $(OBJ3)
-	$(CCC) $(CCFLAGS) $(CCLNDIRS) -o $(EXE3) $(OBJ3) $(CCLNFLAGS)
-$(OBJ3): $(SRC3)
-	$(CCC) -c $(CCFLAGS) $(SRC3) -o $(OBJ3)
