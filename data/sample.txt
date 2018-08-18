@@ -1,1 +1,5 @@
 sample test data.
+
+alterations files from TCGA: alteration_status_GBM_20180326.tsv, alteration_status_COAD_20180326.tsv, alteration_status_BRCA_20180326.tsv 
+
+PPI networks: STRING10_HiConf_PPI.edges
