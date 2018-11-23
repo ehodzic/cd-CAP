@@ -37,6 +37,8 @@ SRC2 = mcsi.cpp
 
 all: $(EXE1) $(EXE2)
 
+only_mcsi: $(EXE2)
+
 clean:
 	rm -f *.o $(EXE1) $(EXE2)
 
@@ -46,6 +48,6 @@ $(OBJ1): $(SRC1)
 	$(CCC) -c $(CCFLAGS) $(SRC1) -o $(OBJ1)
 
 $(EXE2): $(OBJ2)
-	$(CCC) $(CCFLAGS) $(CCLNDIRS) -o $(EXE2) $(OBJ2) $(CCLNFLAGS)
+	$(CCC) -o $(EXE2) $(OBJ2)
 $(OBJ2): $(SRC2)
-	$(CCC) -c $(CCFLAGS) $(SRC2) -o $(OBJ2)
+	$(CCC) -c $(SRC2) -o $(OBJ2)
