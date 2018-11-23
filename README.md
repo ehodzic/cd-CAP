@@ -12,6 +12,8 @@ The Makefile is set-up for GCC 6.2. If you are using GCC version 4.x, add ` std=
 
 Simply run `make` command in the root cd-CAP folder. It will create the executables.
 
+To compile only the `mcsi` binary (single network mode of cd-CAP), run `make only_mcsi` command.
+
 ### Running `mcsc` and `mcsi`
 **Usage:**
 ```sh
