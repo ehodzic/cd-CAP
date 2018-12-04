@@ -1,1 +1,3 @@
-# genrandom.py: Generate randomly permutated mutation profiles -- for permutation test. 
+# genrandom.py: 
+
+Generate randomly permutated mutation profiles -- for permutation test. 
